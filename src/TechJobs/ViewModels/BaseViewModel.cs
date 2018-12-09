@@ -15,6 +15,12 @@ namespace TechJobs.ViewModels
         public JobFieldType Column { get; set; }   //<---How to address assignment of value to All in SJVM?
 
 
+        public BaseViewModel()
+        {
+
+        }
+
+
         public void PopulateColumnList()   // <--Do I need a parameter here?
         {
             Columns = new List<JobFieldType>();
