@@ -51,7 +51,9 @@ namespace TechJobs.Controllers
 
                 jobData.Jobs.Add(newJob);
 
-                //return Redirect("Index");
+                int displayJobId = newJob.ID;
+
+                return Redirect(string.Format("/Job?id={0}", displayJobId));
             }
 
 
