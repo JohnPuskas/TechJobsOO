@@ -17,12 +17,6 @@ namespace TechJobs.ViewModels
 
         public BaseViewModel()
         {
-
-        }
-
-
-        public void PopulateColumnList()   // <--Do I need a parameter here?
-        {
             Columns = new List<JobFieldType>();
 
             foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
@@ -30,5 +24,11 @@ namespace TechJobs.ViewModels
                 Columns.Add(enumVal);
             }
         }
+
+
+        //public void PopulateColumnList()   // <--Do I need a parameter here?
+        //{
+       
+        //}
     }
 }

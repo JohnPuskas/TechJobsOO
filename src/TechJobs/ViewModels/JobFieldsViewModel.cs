@@ -32,7 +32,7 @@ namespace TechJobs.ViewModels
             //    Columns.Add(enumVal);
             //}
 
-            PopulateColumnList();
+ //           PopulateColumnList();
 
         }
     }
